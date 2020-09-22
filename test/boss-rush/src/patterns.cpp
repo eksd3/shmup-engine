@@ -119,7 +119,7 @@ void patterns::enemyShotPattern(Enemy * src, Character * t, ShotController * shc
     int iTimer = src->getShotTimer();
 
     // Delay between shots
-    int iDelayFirst = 4;
+    int iDelayFirst = 3;
     int iDelaySecond = 5;
 
     // Bullet velocity
@@ -188,12 +188,12 @@ void patterns::enemyShotPattern(Enemy * src, Character * t, ShotController * shc
         vSrc.y += vSprDim.h;
 
         // If hp is less than 2/3 the sprite is red (bLargeTex), else it's blue (bMediumTex)
-        if (bTresh2 || bTresh3)
-            shc->fireStraightArray( vSrc, GROTTO_DIR_DOWN, vSprDim.w,
-                                    iNumStraight, iVelocityStraight, iRadiusStright, false, shc->getbLargeTex());
-        else
-            shc->fireStraightArray( vSrc, GROTTO_DIR_DOWN, vSprDim.w,
-                                    iNumStraight, iVelocityStraight, iRadiusStright, false, shc->getbMediumTex());
+        SDL_Texture * tBulletTex = shc->getbMediumTex();
+        if (bTresh2)
+        {
+            tBulletTex = shc->getbLargeTex();
+        }
+        shc->fireStraightArray( vSrc, GROTTO_DIR_DOWN, vSprDim.w, iNumStraight, iVelocityStraight, iRadiusStright, false, tBulletTex);
     }
 
     if (iTimer >= INT_MAX - FRAME_DELAY)
