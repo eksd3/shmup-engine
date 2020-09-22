@@ -468,3 +468,65 @@
 1600532311 source:c:\stuff\dev\roll\n\120_danmaku-engine\src\collision.cpp
 	"collision.h"
 
+1600532311 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\collision.cpp
+	"collision.h"
+
+1600614517 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\collision.h
+	"character.h"
+	"shot.h"
+	"grotto_def.h"
+
+1600804640 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\character.h
+	"grotto_def.h"
+	"renderer.h"
+	"shot.h"
+
+1600784893 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\grotto_def.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<SDL2/SDL_ttf.h>
+	"SDL_FontCache.h"
+	<string>
+	<vector>
+	<exception>
+	<math.h>
+	<algorithm>
+	<numeric>
+	<time.h>
+	<unordered_map>
+
+1600003304 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\sdl_fontcache.h
+	"SDL2/SDL.h"
+	"SDL2/SDL_ttf.h"
+	"SDL_gpu.h"
+	<stdarg.h>
+
+1600788804 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\renderer.h
+	"grotto_def.h"
+
+1600671441 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\shot.h
+	"grotto_def.h"
+	"renderer.h"
+
+1600788818 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\renderer.cpp
+	"character.h"
+
+1600003246 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\sdl_fontcache.c
+	"SDL_FontCache.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1600787894 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\shot.cpp
+	"shot.h"
+
+1600670253 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\stage_controller.cpp
+	"stage_controller.h"
+
+1600670328 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\stage_controller.h
+	"grotto_def.h"
+	"renderer.h"
+
+1600804590 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\character.cpp
+	"character.h"
+

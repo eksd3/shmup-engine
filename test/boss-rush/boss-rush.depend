@@ -478,7 +478,7 @@
 	"SDL_gpu.h"
 	<stdarg.h>
 
-1600788560 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\character.h
+1600804640 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\character.h
 	"grotto_def.h"
 	"renderer.h"
 	"shot.h"
@@ -502,7 +502,7 @@
 1600787091 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\patterns.h
 	"character.h"
 
-1600797082 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\enemyobject.h
+1600803983 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\enemyobject.h
 	"GROTTO.h"
 	"patterns.h"
 
@@ -511,4 +511,7 @@
 
 1600797041 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\stage.cpp
 	"gameobject.h"
+
+1600805048 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\patterns.cpp
+	"patterns.h"
 

@@ -116,11 +116,15 @@ void patterns::shot_pattern(Character * src, ShotController * shc)
 
 void patterns::enemyShotPattern(Enemy * src, Character * t, ShotController * shc)
 {
-    int iTimer = src->getShotTimer();
+    if (src->getState() != 1)
+        return;
+
+    int iTimerTarg = src->getVar("m_shotTimerTargeted");
+    int iTimerStraight = src->getVar("m_shotTimerStraightArray");
 
     // Delay between shots
-    int iDelayFirst = 3;
-    int iDelaySecond = 5;
+    int iDelayFirst = 750;
+    int iDelaySecond = 1000;
 
     // Bullet velocity
     int iVelocityTargeted = 6;
@@ -145,14 +149,14 @@ void patterns::enemyShotPattern(Enemy * src, Character * t, ShotController * shc
     if (bTresh3)
     {
         // If the boss has 1/3 hp or less
-        iDelayFirst = 2;
-        iDelaySecond = 3;
+        iDelayFirst = 450;
+        iDelaySecond = 800;
         iVelocityTargeted = 7;
         iVelocityStraight = 12;
     }
 
     // Targeted shots
-    if (iTimer % (iDelayFirst * FRAME_DELAY) == 0)
+    if (iTimerTarg >= iDelayFirst)
     {
         vec2 vTarg = t->getHitbox()->getCenter();
         vec2 vSrc;
@@ -176,10 +180,13 @@ void patterns::enemyShotPattern(Enemy * src, Character * t, ShotController * shc
         vSrc.x += src->getSprite()->rect.w;
         vTarg.x += 40;
         shc->fireTargeted(vSrc, vTarg, iVelocityTargeted, iRadiusTargeted, false, shc->getbSmallTex());
+
+        // Reset the timer
+        src->setVar("m_shotTimerTargeted", 0);
     }
 
     // Straight shots
-    if (iTimer % (iDelaySecond * FRAME_DELAY) == 0)
+    if (iTimerStraight >= iDelaySecond)
     {
         vec2 vSrc = src->getSprite()->getPos();
         vec4 vSprDim = src->getSprite()->rect;
@@ -194,10 +201,13 @@ void patterns::enemyShotPattern(Enemy * src, Character * t, ShotController * shc
             tBulletTex = shc->getbLargeTex();
         }
         shc->fireStraightArray( vSrc, GROTTO_DIR_DOWN, vSprDim.w, iNumStraight, iVelocityStraight, iRadiusStright, false, tBulletTex);
+
+        src->setVar("m_shotTimerStraightArray", 0);
     }
 
-    if (iTimer >= INT_MAX - FRAME_DELAY)
-    {
-        src->resetTimer();
-    }
+    // Increment both timers
+    iTimerTarg = src->getVar("m_shotTimerTargeted");
+    iTimerStraight = src->getVar("m_shotTimerStraightArray");
+    src->setVar("m_shotTimerTargeted", iTimerTarg + FRAME_DELAY);
+    src->setVar("m_shotTimerStraightArray", iTimerStraight + FRAME_DELAY);
 }

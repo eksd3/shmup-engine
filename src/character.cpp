@@ -55,14 +55,14 @@ void Enemy::addVar(std::string key, int val)
     m_vars[key] = val;
 }
 
+void Enemy::setVar(std::string key, int val)
+{
+    m_vars.at(key) = val;
+}
+
 int Enemy::getVar(std::string key)
 {
-    for (auto var : m_vars)
-    {
-        if (var.first == key)
-            return var.second;
-    }
-    return INT_MAX;
+    return m_vars.at(key);
 }
 
 

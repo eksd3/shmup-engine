@@ -100,6 +100,7 @@ public:
     int getShotTimer() const        { return shotTimer; };
     int getState() const            { return state;} ;
     int getVar(std::string key);
+    void setVar(std::string key, int val);
 
     void setHP(int h)               { hp = h; };
     void setState(int s)            { state = s; };

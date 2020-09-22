@@ -21,6 +21,9 @@ public:
         addVar("m_HPThreshold_2", hpt);
         addVar("m_maxhp", maxhp);
 
+        addVar("m_shotTimerTargeted", 0);
+        addVar("m_shotTimerStraightArray", 0);
+
         setSprite(tex, 96, 96);
         sprite->rotationAngle = 180.0f;
         hitbox = Hitbox(vec4(xstart, ystart, 96, 96));
