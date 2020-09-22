@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="danmakuengine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="grottolib-static">
+				<Option output="lib/grotto" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/grottolib-static/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="grottolib">
+				<Option output="lib-dynamic/grottolib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="lib-dynamic" />
+				<Option object_output="obj/grottolib-dynamic/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-lSDL2_image" />
+			<Add option="-lSDL2_ttf" />
+			<Add library="mingw32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
+		</ExtraCommands>
+		<Unit filename="src/GROTTO.h" />
+		<Unit filename="src/SDL_FontCache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/SDL_FontCache.h" />
+		<Unit filename="src/character.cpp" />
+		<Unit filename="src/character.h" />
+		<Unit filename="src/collision.cpp" />
+		<Unit filename="src/collision.h" />
+		<Unit filename="src/grotto_def.h" />
+		<Unit filename="src/renderer.cpp" />
+		<Unit filename="src/renderer.h" />
+		<Unit filename="src/shot.cpp" />
+		<Unit filename="src/shot.h" />
+		<Unit filename="src/stage_controller.cpp" />
+		<Unit filename="src/stage_controller.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="boss-rush" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/boss-rush" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lSDL2_ttf" />
+					<Add option="-lSDL2_image" />
+					<Add option="-lgrotto" />
+				</Linker>
+			</Target>
+			<Target title="Debug">
+				<Option output="bin/Debug/boss-rush" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/SDL2/SDL2-2.0.12/x86_64-w64-mingw32/include" />
+			<Add directory="../../src" />
+		</Compiler>
+		<Linker>
+			<Add option="-lSDL2_ttf" />
+			<Add option="-lSDL2_image" />
+			<Add option="-lgrotto" />
+			<Add library="mingw32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="C:/SDL2/SDL2-2.0.12/x86_64-w64-mingw32/lib" />
+			<Add directory="../../lib" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
+		</ExtraCommands>
+		<Unit filename="src/boss.cpp" />
+		<Unit filename="src/enemyobject.h" />
+		<Unit filename="src/gameobject.cpp" />
+		<Unit filename="src/gameobject.h" />
+		<Unit filename="src/patterns.cpp" />
+		<Unit filename="src/patterns.h" />
+		<Unit filename="src/stage.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
