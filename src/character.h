@@ -155,6 +155,9 @@ public:
     // Loops through m_spawnedEnemies and removes them if HP <= 0
     void destroyDead();
 
+    // Clear all vectors, reset variables
+    void clear();
+
     void setBoundary(int n)     { m_boundary = n; };
 
     int getNumOfUnspawned() const   { return m_enemyVector.size(); };

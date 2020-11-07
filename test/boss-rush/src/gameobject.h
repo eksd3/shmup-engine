@@ -23,6 +23,8 @@ private:
     bool        m_run;
     vec2        m_movementDir;
     int         m_level;
+    int         m_maxLevel;
+    bool        m_paused;
 
     std::vector<Enemy*> m_destroyed;
 
@@ -34,6 +36,8 @@ private:
 public:
     GameObject();
     ~GameObject();
+
+    int MainMenu(bool gameClear = false);
 
     bool is_running() const { return m_run; };
     void update();
@@ -47,6 +51,7 @@ public:
 
     void next_level();
     void init_level(int n);
+    void reset_level();
 };
 
 #endif // __GAMEOBJECT_H_

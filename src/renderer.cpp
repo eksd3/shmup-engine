@@ -152,6 +152,19 @@ void SDL::addText(      const std::string& formattedText,
     m_overlayLayer.push_back(spr);
 }
 
+void SDL::removeOverlayByFormattedText(const std::string& query)
+{
+    // gcc warns about signing comparison here but it should be fine
+    for (int i = 0; i < m_overlayLayer.size(); i++)
+    {
+        if (m_overlayLayer[i]->formatted_text == query)
+        {
+            m_overlayLayer[i] = m_overlayLayer[m_overlayLayer.size() - 1];
+            m_overlayLayer.pop_back();
+        }
+    }
+}
+
 void SDL::renderSpriteSheet(Sprite * spr)
 {
     SDL_Rect src;
@@ -189,4 +202,19 @@ void SDL::clear()
 {
     m_spriteLayer.clear();
     m_bulletLayer.clear();
+}
+
+void SDL::clearBullet()
+{
+    m_bulletLayer.clear();
+}
+
+void SDL::clearSprite()
+{
+    m_spriteLayer.clear();
+}
+
+void SDL::clearOverlay()
+{
+    m_overlayLayer.clear();
 }

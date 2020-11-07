@@ -6,11 +6,13 @@ Only 1 level
 
 #include "gameobject.h"
 
+// ---------------------------------------------------------------------------------------------------------
 
 int WinMain( int argc, char * argv[] )
 {
-    GameObject * game = new GameObject();
     srand((unsigned) time(NULL));
+
+    GameObject * game = new GameObject();
 
     while (game->is_running())
     {

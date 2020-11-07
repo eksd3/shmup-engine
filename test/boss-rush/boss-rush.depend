@@ -24,7 +24,7 @@
 	<time.h>
 	<unordered_map>
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_assert.h"
@@ -58,12 +58,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_main.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -92,27 +92,27 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_config.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_config.h
 	"SDL_platform.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
 	"AvailabilityMacros.h"
 	"TargetConditionals.h"
 	<winapifamily.h>
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\begin_code.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\begin_code.h
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\close_code.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\close_code.h
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
 	"SDL_config.h"
 	"begin_code.h"
 	<signal.h>
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
 	"SDL_stdinc.h"
 	"SDL_platform.h"
 	"begin_code.h"
@@ -120,7 +120,7 @@
 	<mbarrier.h>
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -130,25 +130,25 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_error.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
 	"SDL_stdinc.h"
 	<endian.h>
 	<endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_atomic.h"
@@ -159,18 +159,18 @@
 	<stdlib.h>
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	<intrin.h>
 	<intrin.h>
@@ -189,7 +189,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_events.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -203,7 +203,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_video.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -211,13 +211,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
 	"SDL_stdinc.h"
 	"SDL_endian.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_pixels.h"
@@ -225,7 +225,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -234,11 +234,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keycode.h"
@@ -246,27 +246,27 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
 	"SDL_stdinc.h"
 	"SDL_scancode.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
 	"SDL_stdinc.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
@@ -274,11 +274,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -286,71 +286,71 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_joystick.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_log.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_log.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
 	"SDL_stdinc.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_metal.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_metal.h
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_power.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_power.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_render.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_render.h
 	"SDL_stdinc.h"
 	"SDL_rect.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_sensor.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_sensor.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -359,7 +359,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_system.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_system.h
 	"SDL_stdinc.h"
 	"SDL_keyboard.h"
 	"SDL_render.h"
@@ -367,24 +367,24 @@
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1583894369 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_version.h
+1583890769 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1561870398 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_image.h
+1561866798 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_image.h
 	"SDL.h"
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
 
-1547325890 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_ttf.h
+1547322290 c:\sdl2\sdl2-2.0.12\x86_64-w64-mingw32\include\sdl2\sdl_ttf.h
 	"SDL.h"
 	"begin_code.h"
 	"close_code.h"
@@ -441,16 +441,16 @@
 1600795770 source:c:\stuff\dev\roll\n\120_danmaku-engine\test\boss-rush\src\boss.cpp
 	"gameobject.h"
 
-1600795770 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\boss.cpp
+1604676519 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\boss.cpp
 	"gameobject.h"
 
-1600670794 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\gameobject.h
+1604685919 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\gameobject.h
 	<time.h>
 	"GROTTO.h"
 	"patterns.h"
 	"enemyobject.h"
 
-1600475382 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\grotto.h
+1600471782 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\grotto.h
 	"grotto_def.h"
 	"character.h"
 	"collision.h"
@@ -458,7 +458,7 @@
 	"shot.h"
 	"stage_controller.h"
 
-1600784893 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\grotto_def.h
+1600781293 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\grotto_def.h
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
 	<SDL2/SDL_ttf.h>
@@ -472,46 +472,46 @@
 	<time.h>
 	<unordered_map>
 
-1600003304 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\sdl_fontcache.h
+1599999704 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\sdl_fontcache.h
 	"SDL2/SDL.h"
 	"SDL2/SDL_ttf.h"
 	"SDL_gpu.h"
 	<stdarg.h>
 
-1600804640 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\character.h
+1604630314 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\character.h
 	"grotto_def.h"
 	"renderer.h"
 	"shot.h"
 
-1600788804 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\renderer.h
+1604674085 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\renderer.h
 	"grotto_def.h"
 
-1600671441 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\shot.h
+1600667841 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\shot.h
 	"grotto_def.h"
 	"renderer.h"
 
-1600614517 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\collision.h
+1600610917 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\collision.h
 	"character.h"
 	"shot.h"
 	"grotto_def.h"
 
-1600670328 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\stage_controller.h
+1600666728 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\src\stage_controller.h
 	"grotto_def.h"
 	"renderer.h"
 
-1600787091 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\patterns.h
+1604682603 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\patterns.h
 	"character.h"
 
-1600803983 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\enemyobject.h
+1604686563 c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\enemyobject.h
 	"GROTTO.h"
 	"patterns.h"
 
-1600797202 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\gameobject.cpp
+1604687392 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\gameobject.cpp
 	"gameobject.h"
 
-1600797041 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\stage.cpp
+1604687032 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\stage.cpp
 	"gameobject.h"
 
-1600805048 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\patterns.cpp
+1604684455 source:c:\stuff\dev\roll\n\120_danmaku-engine\shmup-engine\test\boss-rush\src\patterns.cpp
 	"patterns.h"
 

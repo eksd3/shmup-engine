@@ -34,6 +34,11 @@ public:
     // Clears sprite vectors
     void clear();
 
+    // Clear specific sprite vectors
+    void clearSprite();
+    void clearBullet();
+    void clearOverlay();
+
     // Takes x and y positions of the texture as well as width and height
     void renderTexture(SDL_Texture * tex, int x, int y, int w, int h);
 
@@ -55,6 +60,9 @@ public:
                     float x,
                     float y,
                     SDL_Color cl);
+
+    // Remove text by formatted text
+    void removeOverlayByFormattedText(const std::string& query);
 
     // Adds to sprite vectors
     void addSpriteLayer(Sprite * s);

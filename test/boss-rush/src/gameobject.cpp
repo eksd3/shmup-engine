@@ -7,6 +7,7 @@ Game object class
 
 #include "gameobject.h"
 
+// ---------------------------------------------------------------------------------------------------------
 
 GameObject::GameObject()
 {
@@ -16,6 +17,20 @@ GameObject::GameObject()
 
     // Init SDL
     m_sdl = new SDL( m_iWinW, m_iWinH, SDL_INIT_VIDEO );
+
+    m_time = 0;
+
+    m_keyboardState = SDL_GetKeyboardState(NULL);
+    m_run = true;
+    m_paused = true;
+
+    // Show main menu before continuing
+    m_maxLevel = 4;
+    m_level = MainMenu();
+    m_sdl->clearOverlay();
+
+    if (!m_run)
+        return;
 
     m_shotController = new ShotController(m_sdl);
     m_shotController->setMaxBullets(1000);
@@ -32,24 +47,22 @@ GameObject::GameObject()
 
     m_stageController = new StageController(m_sdl, m_sdl->loadTexture("sprites/bg.png"), false, false, 3, 0);
 
-    m_keyboardState = SDL_GetKeyboardState(NULL);
-
     // Initialize the player character
-    m_player = new Player(vec2(400, 500), vec2(32, 32), 7);
+    m_player = new Player(vec2(400, 500), vec2(16, 16), 7);
     m_player->setSprite(m_sdl->loadTexture("sprites/ship.png"), 32, 32);
+    m_player->setVulnerability(true);
 
     // Add player sprite to sdl's vector
     m_sdl->addSpriteLayer(m_player->getSprite());
 
-    m_time = 0;
-    m_level = 0;
     m_sdl->addText("Time: %s", std::to_string(m_time), "sample.ttf", 15, 10, m_iWinH-40, FC_MakeColor(0, 255, 255, 255));
     m_sdl->addText("Level: %s", std::to_string(m_level), "sample.ttf", 15, 10, m_iWinH-60, FC_MakeColor(255, 0, 0, 255));
-    m_run = true;
 
     next_level();
 }
 
+
+// ---------------------------------------------------------------------------------------------------------
 
 
 GameObject::~GameObject()
@@ -60,6 +73,9 @@ GameObject::~GameObject()
     delete m_stageController;
     delete m_player;
 }
+
+
+// ---------------------------------------------------------------------------------------------------------
 
 
 void GameObject::update()
@@ -119,6 +135,10 @@ void GameObject::update()
     }
 }
 
+
+// ---------------------------------------------------------------------------------------------------------
+
+
 void GameObject::handle_events()
 {
     m_frameStart = SDL_GetTicks();
@@ -131,24 +151,24 @@ void GameObject::handle_events()
     if (m_keyboardState[SDL_SCANCODE_ESCAPE])
         m_run = false;
 
-    if (m_keyboardState[SDL_SCANCODE_S])
+    if (m_keyboardState[SDL_SCANCODE_A])
     {
         m_player->movePlayer(GROTTO_DIR_LEFT, m_iWinW, m_iWinH);
         m_player->getSprite()->gotoIter(2, 0);
     }
 
-    if (m_keyboardState[SDL_SCANCODE_F])
+    if (m_keyboardState[SDL_SCANCODE_D])
     {
         m_player->movePlayer(GROTTO_DIR_RIGHT, m_iWinW, m_iWinH);
         m_player->getSprite()->gotoIter(1, 0);
     }
 
-    if (m_keyboardState[SDL_SCANCODE_E])
+    if (m_keyboardState[SDL_SCANCODE_W])
     {
         m_player->movePlayer(GROTTO_DIR_UP, m_iWinW, m_iWinH);
     }
 
-    if (m_keyboardState[SDL_SCANCODE_D])
+    if (m_keyboardState[SDL_SCANCODE_S])
     {
         m_player->movePlayer(GROTTO_DIR_DOWN, m_iWinW, m_iWinH);
     }
@@ -159,6 +179,11 @@ void GameObject::handle_events()
     }
 }
 
+
+// ---------------------------------------------------------------------------------------------------------
+
+
+
 void GameObject::delay_frame()
 {
     m_frameTime = SDL_GetTicks() - m_frameStart;
@@ -168,6 +193,11 @@ void GameObject::delay_frame()
     }
 }
 
+
+// ---------------------------------------------------------------------------------------------------------
+
+
+
 void GameObject::enemy_shots()
 {
     for (Enemy * en : m_enemyController->getSpawned())
@@ -176,11 +206,19 @@ void GameObject::enemy_shots()
     }
 }
 
+
+// ---------------------------------------------------------------------------------------------------------
+
+
+
 void GameObject::check_collision()
 {
-    // The player is always vulnerable so there's no need to perform a check
+    // Player hit
     if (grotto::playerHit(m_player, m_enemyController->getSpawned(), m_shotController->getEnemyBullets()))
-        m_run = false; // TODO
+    {
+        if (m_player->isVulnerable())
+            reset_level();
+    }
 
     BulletEnemyPair enbl;
     enbl = grotto::enemyHit(m_enemyController->getSpawned(), m_shotController->getFriendlyBullets());
@@ -196,6 +234,8 @@ void GameObject::check_collision()
             e->resetTimer();
             m_enemyController->removeEnemy(e);
             m_destroyed.push_back(e);
+
+            m_player->setVulnerability(false);
         }
         else
         {
@@ -221,6 +261,10 @@ void GameObject::check_collision()
 }
 
 
+// ---------------------------------------------------------------------------------------------------------
+
+
+
 void GameObject::enemy_explode()
 {
     // Set the enemy's sprite to the explosion strip
@@ -239,4 +283,88 @@ void GameObject::enemy_explode()
         }
         en->incrementTimer(FRAME_DELAY);
     }
+}
+
+
+
+// ---------------------------------------------------------------------------------------------------------
+
+
+
+int GameObject::MainMenu(bool gameClear)
+{
+    // Terrible main menu
+
+    if (gameClear)
+    {
+        float t = m_time / 1000.0f;
+        m_sdl->addText("Congratulations!", "", "sample.ttf", 25, 80, 20, FC_MakeColor(255, 255, 255, 255));
+        m_sdl->addText("Your time was %s seconds.", std::to_string(t), "sample.ttf", 25, 80, 50, FC_MakeColor(255, 255, 255, 255));
+    }
+
+    m_sdl->addText("Enter: start", "", "sample.ttf", 25, 80, 100, FC_MakeColor(255, 255, 0, 255));
+    m_sdl->addText("1 - %s: select level", std::to_string(m_maxLevel), "sample.ttf", 25, 80, 130, FC_MakeColor(0, 255, 255, 255));
+    m_sdl->addText("ESC: exit", "", "sample.ttf", 25, 80, 160, FC_MakeColor(255, 0, 255, 255));
+
+    SDL_SetRenderDrawColor(m_sdl->getRenderer(), 0, 0, 0, 0);
+
+    SDL_RenderClear(m_sdl->getRenderer());
+
+    m_sdl->drawOverlayLayer();
+    SDL_RenderPresent(m_sdl->getRenderer());
+
+    while (m_paused)
+    {
+        m_frameStart = SDL_GetTicks();
+
+        SDL_PollEvent(&m_ev);
+        if (m_ev.type == SDL_QUIT)
+        {
+            m_paused = false;
+            m_run = false;
+            return -1;
+        }
+
+        SDL_PumpEvents();
+        if (m_keyboardState[SDL_SCANCODE_ESCAPE])
+        {
+            m_paused = false;
+            m_run = false;
+            return -1;
+        }
+
+        if (m_keyboardState[SDL_SCANCODE_RETURN])
+        {
+            m_paused = false;
+            return 0;
+        }
+
+        if (m_keyboardState[SDL_SCANCODE_1])
+        {
+            m_paused = false;
+            return 0;
+        }
+
+        if (m_keyboardState[SDL_SCANCODE_2])
+        {
+            m_paused = false;
+            return 1;
+        }
+
+        if (m_keyboardState[SDL_SCANCODE_3])
+        {
+            m_paused = false;
+            return 2;
+        }
+
+        if (m_keyboardState[SDL_SCANCODE_4])
+        {
+            m_paused = false;
+            return 3;
+        }
+
+        delay_frame();
+    }
+
+    return 0;
 }

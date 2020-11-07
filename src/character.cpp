@@ -1,4 +1,13 @@
+//
+
+
 #include "character.h"
+
+
+
+// ---------------------------------------------------------------------------------------------------------
+
+
 
 Player::Player(vec2 pos, vec2 dim, float vel)
 {
@@ -24,7 +33,9 @@ void Player::movePlayer(vec2 vec, int iWinW, int iWinH)
 }
 
 
-// -----------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------------------------------------
+
 
 
 void Enemy::initEnemy(float xvel, float yvel, int _hp, int spawn)
@@ -245,4 +256,13 @@ void EnemyController::destroyDead()
             --it;
         }
     }
+}
+
+void EnemyController::clear()
+{
+    m_enemyVector.clear();
+    m_spawnedEnemies.clear();
+    m_destroyedEnemies.clear();
+
+    timer = 0;
 }
